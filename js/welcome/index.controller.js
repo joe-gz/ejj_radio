@@ -3,5 +3,12 @@
 (function(){
   angular
   .module("welcome")
-  .controller("WelcomeIndexController", []);
+  .controller("WelcomeIndexController", [
+    TestFunction
+  ]);
+
+  function TestFunction (){
+    console.log("hello");
+  }
+
 }());
