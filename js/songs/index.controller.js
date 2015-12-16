@@ -5,10 +5,10 @@
   .module("songs")
   .controller("SongsIndexController",[
     "SongsFactory",
-    SongNewControllerFunction
+    SongIndexControllerFunction
   ]);
 
-  function SongNewControllerFunction(SongsFactory){
+  function SongIndexControllerFunction(SongsFactory){
     console.log("Songs");
     this.songs = SongsFactory.query()
   }

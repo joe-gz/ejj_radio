@@ -1,0 +1,10 @@
+<h2>Edit {{SongsEditViewModel.song.title}}</h2>
+
+<form>
+  <input placeholder="Title" data-ng-model="SongsEditViewModel.song.title" />
+  <input placeholder="Artist" data-ng-model="SongsEditViewModel.song.artist" />
+  <input placeholder="Genre" data-ng-model="SongsEditViewModel.song.genre"/>
+  <input placeholder="Album URL" data-ng-model="SongsEditViewModel.song.album_art" />
+  <input placeholder="Audio Url" data-ng-model="SongsEditViewModel.song.audio_url"/>
+  <button type="button" data-ng-click="SongsEditViewModel.update()">Update</button>
+</form>
