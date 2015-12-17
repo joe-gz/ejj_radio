@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 <html data-ng-app="radio">
 <head>
+  <style>
+    body {
+      font-family: 'Cabin', sans-serif;
+      background-color: #C1C4CB;
+      background: url(https://images.unsplash.com/photo-1440635592348-167b1b30296f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300);
+      background-attachment: fixed;
+    }
+    img {
+      border-radius: 100px;
+      max-width : 500px;
+    }
+    .head{
+      text-align: center;
+      border: 5px solid black;
+      margin: 0px 100px auto;
+      border-radius: 25px;
+      height: 200px;
+      background: url(https://images.unsplash.com/photo-1440635592348-167b1b30296f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300);
+      background-size: 100%;
+      background-position: 50% 65%;
+    }
+    .main{
+      border: 5px solid black;
+      margin: 0px 100px auto;
+      border-radius: 25px;
+      background-color: rgba(242, 237, 213, .6);
+      text-align: center;
+    }
+  </style>
   <title>GA Radio</title>
+  <link href='https://fonts.googleapis.com/css?family=Cabin|Inconsolata' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
@@ -17,7 +47,11 @@
   <script src="js/songs/song.factory.js"></script>
 </head>
 <body>
-  <h1>GA Radio</h1>
-  <main data-ui-view></main>
+  <div class="head">
+    <a data-ui-sref="songsIndex"><h1>GA Radio</h1></a>
+  </div>
+  <div class="main">
+    <main data-ui-view></main>
+  </div>
 </body>
 </html>
