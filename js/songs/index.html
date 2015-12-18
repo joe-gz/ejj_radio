@@ -1,5 +1,5 @@
 <h1>Songs</h1>
-<a data-ui-sref="songNew"><button>New Song</button></a>
+<a data-ui-sref="songNew"><button class="hvr-buzz">New Song</button></a>
 
 <div data-ng-repeat = "song in SongsIndexViewModel.songs">
   <p><a data-ui-sref="songShow({id: song.id})">{{song.title}}</a></p>
