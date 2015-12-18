@@ -1,8 +1,6 @@
 <song-show data-song="SongsShowViewModel.song"></song-show>
 
-<audio controls>
-  <source data-ng-src="{{SongsShowViewModel.songUrl}}" type="audio/mp4">
-</audio>
+<audio controls data-ng-src="{{SongsShowViewModel.song.audio_url}}"></audio>
 
 <p ng-click="SongsShowViewModel.play()">Play</p>
 
