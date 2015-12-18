@@ -1,0 +1,90 @@
+  body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #C1C4CB;
+    background: url(https://images.unsplash.com/photo-1440635592348-167b1b30296f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300);
+    background-attachment: fixed;
+  }
+  img {
+    border-radius: 100px;
+    max-width : 500px;
+  }
+  .head{
+    text-align: center;
+    border: 5px solid black;
+    margin: 0px 100px auto;
+    border-radius: 25px;
+    height: 200px;
+    background: url(https://images.unsplash.com/photo-1440635592348-167b1b30296f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300);
+    background-size: 100%;
+    background-position: 50% 65%;
+  }
+  .main{
+    border: 5px solid black;
+    margin: 0px 100px auto;
+    border-radius: 25px;
+    background-color: rgba(242, 237, 213, .6);
+    text-align: center;
+  }
+/**/grow
+  .hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(10);
+}
+/**/buzz
+@-webkit-keyframes hvr-buzz {
+50% {
+  -webkit-transform: translateX(3px) rotate(2deg);
+  transform: translateX(3px) rotate(2deg);
+}
+
+100% {
+  -webkit-transform: translateX(-3px) rotate(-2deg);
+  transform: translateX(-3px) rotate(-2deg);
+}
+}
+
+@keyframes hvr-buzz {
+50% {
+  -webkit-transform: translateX(3px) rotate(2deg);
+  transform: translateX(3px) rotate(2deg);
+}
+
+100% {
+  -webkit-transform: translateX(-3px) rotate(-2deg);
+  transform: translateX(-3px) rotate(-2deg);
+}
+}
+
+.hvr-buzz {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+-webkit-animation-name: hvr-buzz;
+animation-name: hvr-buzz;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+transform: scale(10);
+}
